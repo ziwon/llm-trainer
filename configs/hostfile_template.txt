@@ -1,0 +1,19 @@
+# DGX B200 Multi-Node Hostfile Template
+# Replace with your actual DGX B200 node hostnames/IPs
+# Use InfiniBand network addresses for best performance
+
+# Example for 2 nodes (from actual test):
+# dgx-b200-01-ib8 slots=8
+# dgx-b200-08-ib8 slots=8
+
+# Example for 4 nodes:
+dgx-node01-ib slots=8
+dgx-node02-ib slots=8  
+dgx-node03-ib slots=8
+dgx-node04-ib slots=8
+
+# Instructions:
+# 1. Replace hostnames with your actual DGX B200 InfiniBand hostnames
+# 2. Ensure SSH access is configured between nodes
+# 3. Use InfiniBand network for optimal performance
+# 4. Each DGX B200 has 8 H100 GPUs (slots=8)
